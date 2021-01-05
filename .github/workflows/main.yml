@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: 'Comment PR'
-       run: echo "hello variable $check"
+       run: check = 1
        
   comment:
      
