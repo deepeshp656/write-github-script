@@ -28,6 +28,7 @@ jobs:
         with:
           name: homework
       - shell: bash
+        if: ${{`cat homework/math-homework.txt`}}
         run: |
           value=`cat homework/math-homework.txt`
           expr $value \* 9 > homework/math-homework.txt
