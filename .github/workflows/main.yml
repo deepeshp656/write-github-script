@@ -3,8 +3,16 @@ name: Label
 
 on:
   pull_request:
- 
+env:
+  check: 0  
 jobs:
+  varia:    
+    
+    runs-on: ubuntu-latest
+    steps:
+     - name: 'Comment PR'
+       run: echo "hello variable $check"
+       
   comment:
      
      runs-on: ubuntu-latest
